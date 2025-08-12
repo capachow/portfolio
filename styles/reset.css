@@ -1,0 +1,50 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+html, body, div, span, object, iframe, nav, menu, h1, h2, h3, h4, h5, h6, hr, 
+p, a, button, code, dfn, small, strong, dl, dt, dd, ol, ul, li, fieldset, form, 
+label, input, textarea, select, legend, table, figure, tr, th, td {
+  border: 0px;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  margin: 0px;
+  outline: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+header, main, footer, section, aside,
+article, img, video, svg, iframe {
+  display: block;
+  box-sizing: border-box;
+}
+
+body, input, textarea, select, button {
+  -webkit-text-size-adjust: none !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+* > *:first-child {
+  margin-top: 0px !important;
+}
+
+hr {
+  height: 1px;
+  clear: both
+}
+
+a, label[for] {
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+figure, img, video {
+  width: 100%;
+  height: auto;
+}
