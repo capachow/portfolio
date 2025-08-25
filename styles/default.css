@@ -222,7 +222,7 @@ main aside > video a {
 }
 
 main aside > figure:hover a {
-  max-height: calc(100% - 46px - max(8px, calc(2vh - 8px)));
+  max-height: calc(100% - 28px - max(8px, calc(2vh - 8px)));
 }
 
 /* main aside > figure a > img {

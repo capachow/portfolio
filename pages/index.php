@@ -40,7 +40,6 @@ if(path(1) == 'project') {
         </a>
         <figcaption>
           <h3 class="bold"><?= $project['heading']; ?></h3>
-          <h5 class="italic"><?= $project['category']; ?></h5>
         </figcaption>
       </figure>
     <?php } ?>
