@@ -23,9 +23,15 @@ if(path(1) == 'project') {
 <?php if(path(1) == 'project') { ?>
   <aside id="examples">
     <?php foreach(glob(path(['IMAGES', "projects/{$project['slug']}/*.jpg"], true)) as $path) { ?>
+      <?php if(file_exists($video = str_replace('.jpg', '.mp4', $path))) { ?>
+        <video poster="<?= str_replace(path('', true), '/', $path); ?>" controls="true">
+          <source src="<?= str_replace(path('', true), '/', $video); ?>" type="video/mp4" />
+        </video>
+      <?php } else { ?>
         <figure>
           <img src="<?= str_replace(path('', true), '/', $path); ?>" />
         </figure>
+      <?php } ?>
     <?php } ?>
   </aside>
   <article id="details">
